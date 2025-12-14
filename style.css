@@ -16,6 +16,56 @@
   border: 3px solid white;
 }
 
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.tech {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.project-links {
+  margin-top: 1.5rem;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.project-links a:hover {
+  background: #444;
+}
+
 body {
   font-family: Monaco, monospace;
   margin: 0;
