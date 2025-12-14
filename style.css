@@ -1,3 +1,9 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 body {
   font-family: Monaco, monospace;
   margin: 0;
@@ -8,7 +14,8 @@ body {
 header {
   background: #222;
   color: white;
-  padding: 1rem;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 nav a {
@@ -18,5 +25,5 @@ nav a {
 }
 
 main {
-  padding: 2rem;
+  padding: 3rem;
 }
