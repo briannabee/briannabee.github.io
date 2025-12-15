@@ -1,3 +1,9 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -74,14 +80,12 @@
   background: #444;
 }
 
-.skills-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem 1.5rem;
+.skills-list li {
+  background: #f3f3f3;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.95rem;
 }
 
 body {
