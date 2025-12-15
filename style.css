@@ -9,10 +9,18 @@
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 12px;
+  border: 2px solid white;
+}
+
+.project-pic {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
   border: 2px solid white;
 }
 
