@@ -74,6 +74,16 @@
   background: #444;
 }
 
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem 1.5rem;
+}
+
 body {
   font-family: Monaco, monospace;
   margin: 0;
@@ -84,7 +94,7 @@ body {
 header {
   background: #222;
   color: white;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 nav a {
