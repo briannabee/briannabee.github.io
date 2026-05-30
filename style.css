@@ -116,6 +116,15 @@
   color: #4b5563;
 }
 
+#contact a {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
 p {
   max-width: 70ch;
 }
