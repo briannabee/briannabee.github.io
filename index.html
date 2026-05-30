@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brianna Dysinger | Portfolio</title>
@@ -14,10 +15,6 @@
     <div class="header-text">
       <h1>Brianna Dysinger</h1>
       <p>Computer Science Student | Software Developer</p>
-      <nav>
-        <a href="projects.html">Projects</a>
-        <a href="research.html">Research</a>
-      </nav>
     </div>
 
     <img src="images/me.jpg"
@@ -42,6 +39,34 @@
       </p>
     </section>
 
+    ```html
+<section>
+  <h2>Projects</h2>
+
+  <div class="project-showcase">
+
+    <div class="project-nav">
+      <button id="prevBtn" class="nav-btn">←</button>
+      <button id="nextBtn" class="nav-btn">→</button>
+    </div>
+
+    <div class="project-image">
+      <img id="projectImage" src="" alt="Project Screenshot">
+    </div>
+
+    <div class="project-content">
+      <h3 id="projectTitle"></h3>
+
+      <p id="projectDescription"></p>
+
+      <ul id="projectFeatures"></ul>
+
+      <p class="tech" id="projectTech"></p>
+    </div>
+
+  </div>
+</section>
+
     <section>
       <h2>Skills</h2>
       <ul class="skills-list">
@@ -59,6 +84,6 @@
     </section>
     </div>
   </main>
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -30,71 +30,62 @@
   border: 2px solid white;
 }
 
+.project-showcase {
+  margin-top: 3rem;
+}
 
-.projects-grid {
-  display: grid;
-  gap: 2rem;
+.project-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-content {
   margin-top: 2rem;
+  max-width: 800px;
 }
 
-@media (min-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.project-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-@media (min-width: 640px) and (max-width: 1023px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.project-content p {
+  color: #4b5563;
 }
 
-@media (max-width: 639px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.project-card {
-  background: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-}
-
-.project-card h3 {
-  margin-top: 0;
-}
-
-.tech {
-  font-size: 0.9rem;
-  color: #555;
+.project-content ul {
   margin-top: 1rem;
+  padding-left: 1.25rem;
 }
 
-.project-links {
-  margin-top: 1.5rem;
-}
-
-.project-links a {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 0.5rem 1rem;
-  background: #222;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
-
-.project-links a:hover {
-  background: #444;
+.project-content li {
+  margin-bottom: 0.5rem;
 }
 
 .skills-list {
@@ -116,7 +107,7 @@
 }
 
 body {
-  font-family: Monaco, monospace;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
