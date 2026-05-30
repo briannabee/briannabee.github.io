@@ -18,16 +18,21 @@
   width: 160px;
   height: 160px;
   object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid white;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
 }
 
-.project-pic {
-  width: 450px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid white;
+.project-image {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.project-image img {
+  transition: transform 0.35s ease;
+}
+
+.project-image img:hover {
+  transform: scale(1.02);
 }
 
 .project-showcase {
@@ -57,14 +62,6 @@
   transform: translateY(-1px);
 }
 
-.project-image img {
-  width: 100%;
-  border-radius: 16px;
-  display: block;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
 .project-content {
   margin-top: 2rem;
   max-width: 800px;
@@ -80,8 +77,7 @@
 }
 
 .project-content ul {
-  margin-top: 1rem;
-  padding-left: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .project-content li {
@@ -92,37 +88,65 @@
   list-style: none;
   padding: 0;
   margin: 0;
-
   display: grid;
   grid-template-columns: repeat(3, minmax(120px, 1fr));
   gap: 0.75rem 1.5rem;
 }
 
 .skills-list li {
-  background: #f3f3f3;
-  padding: 0.5rem 0.75rem;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 0.95rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 0.6rem 1rem;
+}
+
+p {
+  max-width: 70ch;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  line-height: 1.2;
+}
+
+section {
+  margin-bottom: 7rem;
 }
 
 body {
   font-family: 'Inter', sans-serif;
+  background: #f8fafc;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
 header {
-  background: #222;
-  color: white;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem 3rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #111827;
 }
 
 nav a {
-  color: white;
-  margin-right: 1rem;
+  color: #4b5563;
+  margin-right: 1.5rem;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #111827;
 }
 
 main {
